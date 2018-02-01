@@ -1,5 +1,5 @@
 const http = require('http');
-const port = '1337';
+const port = '3001';
 const app = new http.Server();
 
 app.on('request', (req, res) => {
