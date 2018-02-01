@@ -8,14 +8,14 @@ if [ -z $script ] ; then
 
 elif [ $script == "start" ] ; then
   echo "starting $filename"
-  docker-compose -f $filename.yml up
+  docker-compose -f ./$filename.yml up
 
 elif [ $script == "stop" ] ; then
   echo "stopping $filename"
-  docker-compose -f $filename.yml down
+  docker-compose -f ./$filename.yml down
 
 elif [ $script == "build" ] ; then
   echo "building $filename"
-  docker-compose -f $filename.yml build
+  docker-compose -f ./$filename.yml build
 
 fi
