@@ -7,5 +7,4 @@ FROM node:9.0.0
 RUN rm -rf /opt/app
 RUN mkdir -p /opt/app
 COPY . /opt/app
-RUN cd /opt/app && npm install
 WORKDIR /opt/app
