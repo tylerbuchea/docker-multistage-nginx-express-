@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+  site:
+    build: ../site
+    volumes:
+      - ../site/src:/opt/app/src
+    command: yarn start-dev
+    ports:
+      - "3000:80"
+    environment:
+      NODE_ENV: development
+      PORT: 3001
